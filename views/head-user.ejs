@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jumia Kenya | Online Shopping for Fashion, Electronics, Groceries, Home &amp; More</title>
+  <link rel="stylesheet" href="./css/main.4db97dce.css">
+  <link rel="icon" type="image/ico" sizes="any" href="favicon.87f00114.ico">
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.adbd556a.svg">
+  <script async="" src="./js/gtm.js"></script>
+  <script src="https://kit.fontawesome.com/759f09024b.js" crossorigin="anonymous"></script>
+  <style>
+    #likeButton.liked {
+      background-color: green;
+    }
+
+    #likeButton2.liked {
+      background-color: green;
+    }
+
+    #likeButton3.liked {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="jm">
+
+
+
+     <header class="header">
+            <section class="row -i-ctr -fw-nw -pvm">
+              <div class="col3 -df -i-ctr">
+                <a href="/" class="-df -i-ctr -mra">
+                  <img src="./images/jumialogo-x-4.png" width="50%"></img>
+                </a>
+              </div>
+              <form id="search" method="get" class="cola -df" action="/list" data-track-onsubmit="search">
+                <div class="find"><svg class="ic" xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#6e7072"
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                  </svg><input type="text" name="search" id="fi-q" placeholder="Search" aria-label="Search" value=""
+                    autocomplete="off" required=""><button type="button" class="rst" aria-label="Reset"><svg
+                      viewBox="0 0 24 24" class="ic" width="24" height="24">
+                      <use xlink:href="images/i-icons.a66628fd.svg#close"></use>
+                    </svg></button>
+                  <div class="sug"></div>
+                </div><button type="submit" class="btn _prim _md -mls -fsh0">Search</button>
+              </form>
+              <div class="col -df -j-bet -m -phn -i-ctr">
+                <div class="dpdw _pcent"><input id="dpdw-login" class="tgl" type="checkbox" role="button"
+                    aria-controls="dpdw-login-box" aria-haspopup="true" aria-label="Account"><label
+                    class="trig -df -i-ctr -fs16" for="dpdw-login"><span class="-fsh0 -mrs"><svg viewBox="0 0 24 24"
+                        class="ic" width="24" height="24">
+                        <use xlink:href="images/i-icons.a66628fd.svg#person"></use>
+                      </svg></span>Account<svg viewBox="0 0 24 24" class="ic -mls -fsh0" width="18" height="18">
+                      <use xlink:href="images/i-icons.a66628fd.svg#arrow-down"></use>
+                    </svg></label>
+                  <div class="box -r" role="menu" aria-labelledby="dpdw-login" id="dpdw-login-box">
+                    <div class="inbox">
+                      <div class="-pam -hr-bb" >
+                        <a rel="nofollow" <% if(username){ %> style="background-color: red;" <% } %>  href="<%= username ? '/signout' : '/login' %>"
+                          class="btn _prim -fw _md"><%= username ? 'Sign out' : 'Sign In' %> </a>
+                      </div>
+                        <a rel="nofollow" href="#"
+                        class="-df -i-ctr -pas -hov-bg-gy05 -hov-m">
+                        <svg viewBox="0 0 24 24" class="ic -mrm -fsh0" width="24"
+                          height="24">
+                          <use xlink:href="images/i-icons.a66628fd.svg#person"></use>
+                        </svg><%= username ? username : 'My Account' %>
+                      </a>
+
+                      <% if(points || points === 0) { %>
+                      <a rel="nofollow" href="#" class="-df -i-ctr -pas -hov-bg-gy05 -hov-m">
+                        <!-- <svg viewBox="0 0 24 24" width="24"
+                          height="24">
+                          <use xlink:href="images/reshot-icon-money-PGKLVTDZA8.svg"></use>
+                        </svg> -->
+                        <img src="images/reshot-icon-money-PGKLVTDZA8.svg" class="ic -mrm -fsh0" width="24"
+                        height="24">
+                        
+                        <%= points %> $
+                      </a>
+                      <% } %>
+
+                        <a rel="nofollow" href="#"
+                        class="-df -i-ctr -pas -hov-bg-gy05 -hov-m"><svg viewBox="0 0 24 24" class="ic -mrm -fsh0" width="24"
+                          height="24">
+                          <use xlink:href="images/i-icons.a66628fd.svg#orders"></use>
+                        </svg>Orders</a>
+                        
+                        <a rel="nofollow" href="#"
+                        class="-df -i-ctr -pas -hov-bg-gy05 -hov-m"><svg viewBox="0 0 24 24" class="ic -mrm -fsh0" width="24"
+                          height="24">
+                          <use xlink:href="images/i-icons.a66628fd.svg#favorite-border"></use>
+                        </svg>Saved Items</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dpdw _pcent"><input id="dpdw-help" class="tgl" type="checkbox" role="button"
+                    aria-controls="dpdw-help-box" aria-haspopup="true" aria-label="Help"><label class="trig -df -i-ctr -fs16"
+                    for="dpdw-help"><span class="-fsh0 -mrs"><svg viewBox="0 0 24 24" class="ic" width="24" height="24">
+                        <use xlink:href="images/i-icons.a66628fd.svg#help-outline"></use>
+                      </svg></span>Help<svg viewBox="0 0 24 24" class="ic -mls -fsh0" width="18" height="18">
+                      <use xlink:href="images/i-icons.a66628fd.svg#arrow-down"></use>
+                    </svg></label>
+                  <div class="box -r" role="menu" aria-labelledby="dpdw-help" id="dpdw-help-box">
+                    <div class="inbox"><a href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Help Center</a><a
+                        href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Place an Order</a><a
+                        href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Track Your Order</a><a
+                        href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Order Cancellation</a><a
+                        href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Returns &amp; Refunds</a><a
+                        href="#"
+                        class="-df -i-ctr -phm -pv12 -hov-bg-gy05 -hov-m">Payment &amp; Jumia Account</a>
+                      <div class="-tac -hr _hx2 -fs0 -pam"><button class="btn _prim _md _i -fw"  ><svg
+                            viewBox="0 0 24 24" class="ic" width="24" height="24">
+                            <use xlink:href="#"></use>
+                          </svg><span>Live Chat</span></button></div>
+                    </div>
+                  </div>
+      
+            </section>
+          </header>

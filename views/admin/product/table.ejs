@@ -1,0 +1,108 @@
+<%- include('../head.ejs') %>
+
+    <!-- Content wrapper -->
+    <div class="content-wrapper">
+        <!-- Content -->
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+
+            <!-- Basic Bootstrap Table -->
+            <div class="card">
+                <% if (message) { %>
+                    <%- message %>
+                <% } %>
+                <h5 class="card-header">Danh sách sản phẩm</h5>
+                <div class="table-responsive text-nowrap">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Danh mục</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                            <% if(data) { for (const item of data.data) { %>
+                                <tr>
+                                    <td>
+                                        <%= item.name %>
+                                    </td>
+                                    <td>
+                                        <%= item.price %>
+                                    </td>
+                                    <td>
+                                        <%= item.quantity %>
+                                    </td>
+                                    <td>
+                                        <%= item.cate_id.name %>
+                                    </td>
+
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
+                                                data-bs-toggle="dropdown">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="/admin/product/edit/<%= item._id %>"><i
+                                                        class="mdi mdi-pencil-outline me-1"></i>Sửa</a>
+                                                <a class="dropdown-item"
+                                                    onclick="deleteFunction('/api/product/<%= item._id %>')"><i
+                                                        class="mdi mdi-trash-can-outline me-1"></i>Xóa</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <% } }%>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Basic rounded Pagination -->
+                <nav aria-label="Page navigation">
+                    
+                    <ul class="pagination pagination-rounded">
+                        <li class="page-item">
+                            <a class="page-link">
+                                Trang:
+                            </a>
+                            
+                        </li>
+                        
+                        <% if(curPage> 1) { %>
+                            <li class="page-item prev">
+                                <a class="page-link" href="/admin/product/list?page=<%= curPage-1 %>"><i
+                                        class="tf-icon mdi mdi-chevron-left"></i></a>
+                            </li>
+                            <% } %>
+                                <% if(pagination) { for (const item of pagination) { %>
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/product/list?page=<%= item %>">
+                                            <%= item %>
+                                        </a>
+                                    </li>
+                                    <% } }%>
+
+                                        <% if(totalPage - curPage >= 1) { %>
+                                            <li class="page-item next">
+                                                <a class="page-link" href="/admin/product/list?page=<%= curPage+1 %>"><i
+                                                        class="tf-icon mdi mdi-chevron-right"></i></a>
+                                            </li>
+                                            <% } %>
+                    </ul>
+                </nav>
+                <!--/ Basic rounded Pagination -->
+            </div>
+            <!--/ Basic Bootstrap Table -->
+
+
+
+            <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+    </div>
+
+    <%- include('../footer.ejs') %>

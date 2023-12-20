@@ -1,0 +1,377 @@
+<%- include('head-user.ejs') %>
+
+        <main class="-pvs">
+            <div class="row">
+                <section class="col12 -df -d-co">
+                    <div class="row card _no-g -fg1 -pas">
+                        <div class="col6 -phs -pvxs">
+                            <div class="-ptxs -pbs">
+                                <div id="imgs" class="sldr _img _prod -rad4 -oh -mbs _uno">
+                                    <input type="radio"
+                                        id="imgs-sld-1" name="imgs-sld" class="sld" checked />
+                                        <a
+                                        href="<%= data.images[0] %>"
+                                        class="itm" data-pop-trig="lazy-img-zoom" data-pop-dyn-id="1"
+                                        data-pop-open="imageZoom">
+
+                                        <img 
+                                        data-lazy-slide="true"
+                                            src="<%= data.images[0] %>"
+                                            class="-fw -fh"
+                                            alt="product_image_name-Hisense-43A6H - 43&quot; Smart 4K TV - Black-1" />
+                                        </a>
+                                </div>
+                            </div>
+                            <section class="-hr -pvs">
+                                <h2 class="-fs14 -m -upp -pbs">Share this product </h2>
+                                <div class="-df -pvs"><button class="brd-btn _rnd"
+                                        data-share-url="http://localhost:9000/FILES-1702557471277-416415416.JPEG"
+                                        aria-label="Share on Facebook"><svg viewBox="0 0 24 24" class="ic" width="16"
+                                            height="16">
+                                            <use
+                                                xlink:href="http://localhost:9000/FILES-1702557471277-416415416.JPEG">
+                                            </use>
+                                        </svg></button><button class="brd-btn _rnd -mls"
+                                        data-share-url="http://localhost:9000/FILES-1702557471277-416415416.JPEG"
+                                        aria-label="Share on Twitter"><svg viewBox="0 0 24 24" class="ic" width="16"
+                                            height="16">
+                                            <use
+                                                xlink:href="http://localhost:9000/FILES-1702557471277-416415416.JPEG">
+                                            </use>
+                                        </svg></button></div>
+                            </section>
+                        </div>
+                        <div class="col10">
+                            <div class="-df -j-bet">
+                                <div class="-pls -prl">
+                                    <div class="-df -i-ctr -pts"><a href="/all-products/?tag=JMALL"
+                                            class="bdg _mall _sm -mrs">Official Store</a><a
+                                            href="/all-products/?tag=WRNTY_2" class="-fs0"><img data-lazy="true"
+                                                data-src="https://ke.jumia.is/badges/wrnty_2/1/138x18.png?0789"
+                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                class="_ni" width="135" height="16" alt="WRNTY_2" /></a></div>
+                                    <h1 class="-fs20 -pts -pbxs"><%= data.name %></h1>
+                                </div><a id="wishlist"
+                                    href="/customer/account/login/?tkWl=HI200EA0W436INAFAMZ-107616409&amp;return=%2Fhisense-43a6h-43-smart-4k-tv-black-85483935.html"
+                                    class="btn _def _i _rnd -mas -fsh0 -me-start" rel="nofollow"
+                                    data-simpleSku="HI200EA0W436INAFAMZ-107616409" data-track-onclick="wishlist"><svg
+                                        aria-label="Add to wishlist" viewBox="0 0 24 24" class="ic -f-or5" width="24"
+                                        height="24">
+                                        <use
+                                            xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#saved-items">
+                                        </use>
+                                    </svg></a>
+                            </div>
+                            <div class="-phs">
+
+                                <div class="-hr -mtxs -pvs">
+                                    <div class="df -i-ctr -fw-w"><span dir="ltr" class="-b -ltr -tal -fs24 -prxs"><%= formatMoney(data.price) %> $</span>
+                                    </div>
+                                </div>
+                                <p class="-df -i-ctr -fs12 -pbs -yl7">Số lượng: <%= data.quantity %></p>
+                
+                                <div class="-df -i-ctr -pbs">
+                                    <div class="stars _m _al">4.6 out of 5<div class="in"
+                                            style="width:91.99999999999999%"></div>
+                                    </div><a class="-plxs _more"
+                                        href="/catalog/productratingsreviews/sku/HI200EA0W436INAFAMZ/">(30 verified
+                                        ratings)</a>
+                                </div>
+                            </div>
+                            <div class="-phxs">
+                                <div class="-phxs -pvs">
+                                    <!-- <form method="post" action="/cart/products/HI200EA0W436INAFAMZ-107616409/quantity/"
+                                        class="-df -i-ctr -pr -j-bet" id="add-to-cart" data-add-cart="pdpMain"
+                                        data-sku="HI200EA0W436INAFAMZ" data-svar="HI200EA0W436INAFAMZ-107616409"
+                                        data-xhr="true" data-id="HI200EA0W436INAFAMZ"
+                                        data-name="43A6H - 43&quot; Smart 4K TV - Black" data-price="211.95"
+                                        data-brand="Hisense"
+                                        data-category="Electronics/Television &amp; Video/Televisions/Smart TVs"
+                                        data-dimension23="74350" data-dimension26="30" data-dimension27="4.6"
+                                        data-dimension28="0" data-dimension37="0"
+                                        data-dimension43="BDEAL|BLF|BLF_04|Boost|COL_226|COL_249|CP_23|CP_26|CP_MT31|JA23_01|JMALL|MLP2|NOJ|TBOOST|TOP|TW23_05|WRNTY_2|XMAS22|XMAS22_02|XMAS22_06|XMAS22_07"
+                                        data-dimension44="0" data-simpleSku="HI200EA0W436INAFAMZ-107616409" data-variant
+                                        data-track-onsubmit="addToCart"> -->
+                                            <button type="button" id="likeButton"
+                                            class="add btn _prim -pea _i -fw" name="action" value="in"><span>LIKE</span></button>
+
+                                        
+                                            
+                                            <input name="capiId"
+                                            value="d72d2ec788a20bcb8266c7855516d002_1701766827_{eventType}"
+                                            type="hidden" /><input name="csrfToken"
+                                            value="87534d8fbeaf05010f1dfba8b92cf869" type="hidden" />
+                                        <!-- </form> -->
+                                </div>
+                            </div>
+
+                            <div class="-phxs">
+                                <div class="-phxs -pvs">
+    
+
+                                            <button type="button" id="likeButton2"
+                                            class="add btn _prim -pea _i -fw" name="action" value="in"><span>Purchase</span></button>
+
+
+                                </div>
+                            </div>
+
+                            <div class="-phxs">
+                                <div class="-phxs -pvs">
+
+
+                                            <button type="button" id="likeButton3"
+                                            class="add btn _prim -pea _i -fw" name="action" value="in"><span>Refund</span></button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </section>
+                <div class="col4">
+
+                    <div class="-pts">
+                        <section class="card"><a href="/zanucart/" class="-pas -df -i-ctr -upp">
+                                <h2 class="-m -fs14">Seller Information</h2><svg viewBox="0 0 24 24"
+                                    class="ic -fsh0 -mla" width="24" height="24">
+                                    <use
+                                        xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#arrow-right">
+                                    </use>
+                                </svg>
+                            </a>
+                            <div class="-hr -pas">
+                                <p class="-m -pbs">Zanucart</p>
+                                <div class="-df -j-bet -fs12">
+                                    <div class="-df -d-co -j-bet -prs">
+                                        <p><bdo dir="ltr" class="-m -prxs">94%</bdo>Seller Score</p>
+                                        <p data-followers="true"><span class="-m">240 </span><span>Followers</span></p>
+                                    </div><a class="btn _sm _prim -fsh0 -me-end"
+                                        href="#"
+                                        rel="nofollow" data-eventCategory="Follow Seller"
+                                        data-eventLabel="product_product" data-eventAction="followSeller"
+                                        data-track-onclick="true">Follow</a>
+                                </div>
+                            </div>
+                            <div class="-pas -bt -fs12">
+                                <h3 class="-df -i-ctr -m -fs14">Seller Performance<button
+                                        aria-label="Seller Performance" class="-cp -hov-or5 -out0 -fs0 -phxs"
+                                        data-pop-trig="def" data-pop-open="seller"><svg viewBox="0 0 24 24"
+                                            class="ic -f-gy5 -maxxs" width="20" height="20">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#info">
+                                            </use>
+                                        </svg></button></h3>
+                                <div class="-df -i-ctr -pts"><span class="ic-bg -mrs -fsh0 -bg-gn5"><svg
+                                            viewBox="0 0 24 24" class="ic -f-wt -maxxs" width="12" height="12">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#star">
+                                            </use>
+                                        </svg></span>
+                                    <p>Order Fulfillment Rate: <span class="-m">Excellent</span></p>
+                                </div>
+                                <div class="-df -i-ctr -pts"><span class="ic-bg -mrs -fsh0 -bg-gn5"><svg
+                                            viewBox="0 0 24 24" class="ic -f-wt -maxxs" width="12" height="12">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#star">
+                                            </use>
+                                        </svg></span>
+                                    <p>Quality Score: <span class="-m">Excellent</span></p>
+                                </div>
+                                <div class="-df -i-ctr -pts"><span class="ic-bg -mrs -fsh0 -bg-gn5"><svg
+                                            viewBox="0 0 24 24" class="ic -f-wt -maxxs" width="12" height="12">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#star">
+                                            </use>
+                                        </svg></span>
+                                    <p>Customer Rating: <span class="-m">Good</span></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col16">
+                    <div id="pdp_top" class="-rad4 -oh -mtm -mxh-250px" data-ad="true"></div>
+                </div>
+                <div class="col12">
+                    <div class="card aim -mtm">
+                        <div id="description" class="hook"></div>
+                        <header class="-pvs -bb">
+                            <h2 class="-fs20 -m -phm -pvxs">Product Detail</h2>
+                        </header>
+                        <div class="markup -mhm -pvl -oxa -sc">
+                            <%- data.description %>
+                            <iframe width="888" height="666" src="https://www.youtube.com/embed/WSY7G8R6rh4?list=RDWSY7G8R6rh4" title="[Vietsub] Thương Ly Biệt - 伤离别 - Ngụy Tân Vũ - 魏新雨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        
+                        
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <script
+                type="application/ld+json">{"@context":"https://schema.org","@type":"ItemPage","mainEntity":{"@type":"Product","name":"43A6H - 43\" Smart 4K TV - Black","brand":"Hisense","description":"HISENSE 43” FRAMELESS 4K ULTRA HD SMART TVFRAMELESS 4K ULTRA HD SMART TV NETFLIXYOUTUBERESOLUTION: 3840 * 2160 HDR(HIGH DYANIMIC RANGE)QUAD CORE PROCESSOR4K UPSCALING DTS STUDIO  SOUNDDOBLY AUDIO SOUNDWEB BROWSERFREEVIEW PLAYONE TOUCH ACCESSANYWIEW (SCREEN MIRRORING)DIGITAL TUNER-DVB-T2/T/C/S2/SIN-BUILT WI-FIHDMI 2.0USB 2.0","offers":{"@type":"Offer","availability":"http://schema.org/InStock","price":"35199.00","priceCurrency":"KES"},"image":{"@type":"ImageObject","name":"43A6H - 43\" Smart 4K TV - Black","contentUrl":["https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/53/938458/1.jpg?1742"],"thumbnailUrl":["https://ke.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/53/938458/1.jpg?1742"]},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.6,"ratingCount":30}},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.jumia.co.ke/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.jumia.co.ke/electronics/","name":"Electronics"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.jumia.co.ke/electronic-television-video/","name":"Television & Video"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.jumia.co.ke/televisions/","name":"Televisions"}},{"@type":"ListItem","position":5,"item":{"@id":"https://www.jumia.co.ke/smart-tvs-2282/","name":"Smart TVs"}}]}}</script>
+        </main>
+        <footer class="-pbm -fs12 -bg-gy7 -gy05">
+            <div class="-bg-gy9 -mbm">
+                <div class="row -ptl">
+                    <div class="col4"><svg viewBox="0 0 172 30" class="ic" width="140" height="32">
+                            <use xlink:href="images/i-shop-jumia.9f5451c7.svg#logo-inv"></use>
+                        </svg></div>
+                    <div class="col7 -df -d-co -j-bet">
+                        <div>
+                            <div class="f-t -pbs">New to Jumia?</div>Subscribe to our newsletter to get updates on our
+                            latest offers!
+                        </div>
+                        <form method="post" id="nl-ft-f" action="/newsletter/subscription/default/" class="-pts">
+                            <div class="-df -i-start">
+                                <div class="fi-w _ic"><input placeholder="Enter E-mail Address" required="" class="fi"
+                                        type="email" value="" id="fi-nl-ft-email" name="email" aria-label="E-mail"><svg
+                                        class="ic" xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                        <path fill="#6c6f75"
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>
+
+                                </div>
+                                <div class="-df -pvs -plxs"><button name="gender" value="male"
+                                        class="-mhxs brd-btn _sqr -phl">Male</button><button name="gender"
+                                        value="female" class="-mhxs brd-btn _sqr -phl">Female</button></div>
+                            </div><input name="csrfToken" value="dbdbbb6ac24bbb8e11db420fe1b133b6" type="hidden">
+                        </form>
+                    </div>
+                    <div class="col4 -mla">
+                        <div class="-df">
+                            <img src="images/favicon.adbd556a.svg" />
+                            <div class="-plm">
+                                <div class="f-t -pbs">DOWNLOAD JUMIA FREE APP</div>Get access to exclusive offers!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row -pbl">
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">NEED HELP?</span><button
+                        class="-gy05 -pbxs -cp -ahf -tal" data-btn-lc="true" data-eventcategory="LiveChat"
+                        data-eventaction="open" data-eventlabel="footer" data-track-onclick="true">Chat with us</button>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Help Center </a></li>
+                        <li><a class="_link -pbxs" href="#">Contact Us</a></li>
+                    </ul><span class="f-t -pvm">USEFUL LINKS</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Track Your Order</a></li>
+                        <li><a class="_link -pbxs" href="#">Shipping and delivery</a></li>
+                        <li><a class="_link -pbxs" href="#">Return Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">How to Order?</a></li>
+                        <li><a class="_link -pbxs" href="#">Dispute Resolution
+                                Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">Corporate and Bulk Purchase</a>
+                        </li>
+                        <li><a class="_link -pbxs" href="#">Advertise with Jumia</a></li>
+                        <li><a class="_link -pbxs" href="#">Report
+                                a Product</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Payment
+                                Information Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">ABOUT JUMIA</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">About us</a></li>
+                        <li><a class="_link -pbxs" href="#">Returns and Refunds
+                                Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Careers</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Express</a></li>
+                        <li><a class="_link -pbxs" href="#">Terms and Conditions</a></li>
+                        <li><a class="_link -pbxs" href="#">Store Credit Terms and
+                                Conditions</a></li>
+                        <li><a class="_link -pbxs" href="#">Privacy Notice</a></li>
+                        <li><a class="_link -pbxs" href="#">Cookies Notice</a></li>
+                        <li><a class="_link -pbxs" href="#">Flash Sales</a></li>
+                        <li><a class="_link -pbxs" href="#">Black Friday 2023</a></li>
+                    </ul>
+                </div>
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">MAKE MONEY WITH JUMIA</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Sell on Jumia</a></li>
+                        <li><a class="_link -pbxs" href="#">Vendor Hub</a></li>
+                        <li><a class="_link -pbxs" href="#">Become a Sales Consultant</a></li>
+                        <li><a class="_link -pbxs" href="#">Become a
+                                Logistics Service Partner</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia City Partner Program</a></li>
+                    </ul>
+                </div>
+                <div class="col4 row -c-start -pvs"><span class="f-t col16 -pbm">JUMIA INTERNATIONAL</span>
+                    <ul class="col5 -df -d-co -lsn">
+                        <li><a class="_link -pbxs" href="#">Algeria</a></li>
+                        <li><a class="_link -pbxs" href="#">Ivory Coast</a></li>
+                        <li><a class="_link -pbxs" href="#">Egypt</a></li>
+                        <li><a class="_link -pbxs" href="#">Ghana</a></li>
+                        <li><a class="_link -pbxs" href="#">Morocco</a></li>
+                    </ul>
+                    <ul class="col5 -df -d-co -lsn">
+                        <li><a class="_link -pbxs" href="#">Nigeria</a></li>
+                        <li><a class="_link -pbxs" href="#">Senegal</a></li>
+                        <li><a class="_link -pbxs" href="#">Tunisia</a></li>
+                        <li><a class="_link -pbxs" href="#">Uganda</a></li>
+                        <li><a class="_link -pbxs" href="#">Zando</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+    <script>var dataLayer = [{ "countryCode": "KE", "language": "en", "platform": "desktop", "url": "/", "pageType": "home", "pageKey": "home", "pageTitle": "Jumia Kenya | Online Shopping for Fashion, Electronics, Groceries, Home & More", "abTests": "SearchABTest:default_price#CLP:A#Cart:S#SponProdPdp:A", "joinedPageType": "home" }]; (function (w, d, s, l, i, f) { function go() { w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }); f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl; j.addEventListener('load', function () { dataLayer.push({ event: 'pageView' }); (function () { setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl2" }), setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl3" }) }), 500) }), 500) })() }); f.parentNode.insertBefore(j, f); } w.addEventListener("load", go, false); })(window, document, 'script', 'dataLayer', 'GTM-KS6DC65');</script>
+    <script>window.__STORE__ = { "view": "Home", "activeLanguage": "en", "countryCode": "KE", "languages": { "en": { "text": "English", "default": true } }, "svgFallback": false, "tracking": { "gtm": { "key": "GTM-KS6DC65", "url": "/", "pageType": "home", "pageKey": "home" } }, "csrfToken": "dbdbbb6ac24bbb8e11db420fe1b133b6", "capiId": "_1701767576_{eventType}", "user": { "id": "" }, "sprites": { "icons": "https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg", "global": "https://www.jumia.co.ke/assets_he/images/i-global.95441341.svg", "shop": "https://www.jumia.co.ke/assets_he/images/i-jumia.svg" }, "liveChat": { "loadingText": "Live Chat is loading...", "botImg": "https://www.jumia.co.ke/assets_he/images/bot.5beef7d8.svg" }, "timeLabels": { "w": "w", "d": "d", "h": "h", "m": "m", "s": "s" }, "htmlErrors": { "valueMissing": "Required field", "typeMismatch": "Invalid Information", "patternMismatch": "Invalid Information", "rangeOverflow": "form_html-errors_range_overflow", "rangeUnderflow": "form_html-errors_range_underflow", "tooLong": "form_html-errors_too_long", "tooShort": "form_html-errors_too_short" }, "popups": { "newsletter": { "data": { "title": "Welcome to Jumia!", "closeCTA": "newsletter_popup_close-cta" }, "trackingData": { "viewPopup": { "type": "Newsletter" }, "closePopup": { "type": "Newsletter" } }, "template": "Default", "shouldOpen": true, "size": "L", "hideTitle": true } } };</script>
+    <script type="module" crossorigin="" src="https://www.jumia.co.ke/assets_he/js/common.6d2df574.js"></script>
+    <script type="module" crossorigin=""
+        src="https://www.jumia.co.ke/assets_he/js/pages/home/index.a498cd5c.js"></script>
+    <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/common.es5.e568721a.js"></script>
+    <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/pages/home/index.es5.643bdb01.js"></script>
+    <script>
+        const likeButton = document.getElementById('likeButton');
+        const spanText = likeButton.querySelector('span');
+
+        likeButton.addEventListener('click', function () {
+            // Toggle the "liked" class
+            this.classList.toggle('liked');
+            
+            // Update the text content based on the class
+            spanText.textContent = this.classList.contains('liked') ? 'LIKED' : 'LIKE';
+            
+            // Additional logic: You might want to send an AJAX request to the server to save the "liked" state.
+        });
+
+
+        // btn 2
+        const likeButton2 = document.getElementById('likeButton2');
+        const spanText2 = likeButton2.querySelector('span');
+
+        likeButton2.addEventListener('click', function () {
+            this.classList.toggle('liked');
+            spanText2.textContent = this.classList.contains('liked') ? 'PURCHASED' : 'PURCHASE';
+
+        });
+
+        // btn 3
+        const likeButton3 = document.getElementById('likeButton3');
+        const spanText3 = likeButton3.querySelector('span');
+
+        likeButton3.addEventListener('click', function () {
+            this.classList.toggle('liked');
+            spanText3.textContent = this.classList.contains('liked') ? 'REFUNDED' : 'REFUND';
+
+        });
+
+      </script>
+</body>
+
+</html>

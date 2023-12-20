@@ -1,0 +1,527 @@
+<%- include('head-user.ejs') %>
+
+    <main class="has-b2top">
+      <div class="row -pvm">
+
+        <div class="col16 -df -j-bet -pbs">
+          <div class="flyout-w -fsh0 -fs0">
+            <div class="flyout" role="menu">
+              <% if(cate) { for (const item of cate) { %>
+              <a href="/list?cate_id=<%= item._id %>" class="itm"
+                role="menuitem"><span style="font-size: 13px;text-transform: capitalize;" class="text"><%= item.name %></span></a>
+                <% }} %>
+                
+              </div>
+          </div>
+          <div id="sl-topblock" class="sldr _img _main -rad4 -oh -fsh0 -mhm" data-track-onsliderview="eecPromo"><input
+              type="radio" id="sl-topblock-sld-1" name="sl-topblock-sld" class="sld" checked=""><a
+              href="#" class="itm" data-id="home_SX_JL_UND_FlashSale"
+              data-name="SX_JL_UND_FlashSale" data-creative="https://ke.jumia.is/cms/2023/W49/Flashsale/Dec5/Live_S.gif"
+              data-position="slider_1_1" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W49/Flashsale/Dec5/Live_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Flash Sale"></a><label class="lab" for="sl-topblock-sld-8"
+              aria-label="Go to slide 8"></label><label class="dot" for="sl-topblock-sld-1"
+              aria-label="Go to slide 1"></label><input type="radio" id="sl-topblock-sld-2" name="sl-topblock-sld"
+              class="sld"><a href="#" class="itm" data-id="home_SX_JL_UND_TopRated"
+              data-name="SX_JL_UND_TopRated"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_1123_Bundle_Up_S.gif"
+              data-position="slider_1_2" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_1123_Bundle_Up_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Top Rated"></a><label class="lab" for="sl-topblock-sld-1" aria-label="Go to slide 1"></label><label
+              class="dot" for="sl-topblock-sld-2" aria-label="Go to slide 2"></label><input type="radio"
+              id="sl-topblock-sld-3" name="sl-topblock-sld" class="sld"><a href="#"
+              class="itm" data-id="home_SX_JL_UND_Electronics" data-name="SX_JL_UND_Electronics"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_TVs_1123_S.gif"
+              data-position="slider_1_3" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_TVs_1123_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="TVs"></a><label class="lab" for="sl-topblock-sld-2" aria-label="Go to slide 2"></label><label
+              class="dot" for="sl-topblock-sld-3" aria-label="Go to slide 3"></label><input type="radio"
+              id="sl-topblock-sld-4" name="sl-topblock-sld" class="sld"><a href="#"
+              class="itm" data-id="home_SX_JL_UND_Home" data-name="SX_JL_UND_Home"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Home_1123_S.gif"
+              data-position="slider_1_4" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Home_1123_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Home"></a><label class="lab" for="sl-topblock-sld-3" aria-label="Go to slide 3"></label><label
+              class="dot" for="sl-topblock-sld-4" aria-label="Go to slide 4"></label><input type="radio"
+              id="sl-topblock-sld-5" name="sl-topblock-sld" class="sld"><a
+              href="#" class="itm" data-id="home_SX_JL_UND_Fashion"
+              data-name="SX_JL_UND_Fashion"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Fashion_1123_S.gif"
+              data-position="slider_1_5" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Fashion_1123_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Fashion"></a><label class="lab" for="sl-topblock-sld-4" aria-label="Go to slide 4"></label><label
+              class="dot" for="sl-topblock-sld-5" aria-label="Go to slide 5"></label><input type="radio"
+              id="sl-topblock-sld-6" name="sl-topblock-sld" class="sld"><a
+              href="https://www.jumia.co.ke/mlp-drinks-fest/" class="itm" data-id="home_SX_JL_UND_DrinksFest"
+              data-name="SX_JL_UND_DrinksFest"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Drinksember_1123_S.gif"
+              data-position="slider_1_6" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_Drinksember_1123_S.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Drinks Fest"></a><label class="lab" for="sl-topblock-sld-5"
+              aria-label="Go to slide 5"></label><label class="dot" for="sl-topblock-sld-6"
+              aria-label="Go to slide 6"></label><input type="radio" id="sl-topblock-sld-7" name="sl-topblock-sld"
+              class="sld"><a href="#" class="itm" data-id="home_SX_JL_UND_Groceries"
+              data-name="SX_JL_UND_Groceries"
+              data-creative="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_1123_Bundle_Up_S-.gif"
+              data-position="slider_1_7" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W48/CP/sliders/KE_Jumia_Krisi_Sale_1123_Bundle_Up_S-.gif"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Supermarket"></a><label class="lab" for="sl-topblock-sld-6"
+              aria-label="Go to slide 6"></label><label class="dot" for="sl-topblock-sld-7"
+              aria-label="Go to slide 7"></label><input type="radio" id="sl-topblock-sld-8" name="sl-topblock-sld"
+              class="sld"><a href="#" target="_blank"
+              rel="noopener" class="itm" data-id="home_MS_FOD_ACD_Cinnamon" data-name="MS_FOD_ACD_Cinnamon"
+              data-creative="https://ke.jumia.is/cms/2023/W49/FOD/Dec5/_S.jpg" data-position="slider_1_8"
+              data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                data-src="https://ke.jumia.is/cms/2023/W49/FOD/Dec5/_S.jpg"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                alt="Cinnamon"></a><label class="lab" for="sl-topblock-sld-7" aria-label="Go to slide 7"></label><label
+              class="dot" for="sl-topblock-sld-8" aria-label="Go to slide 8"></label><label class="lab"
+              for="sl-topblock-sld-8" aria-label="Go to slide 8"></label><label class="lab" for="sl-topblock-sld-1"
+              aria-label="Go to slide 1"></label>
+            <div class="left"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                viewBox="0 0 320 512">
+                <path fill="#ffffff"
+                  d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+              </svg></div>
+            <div class="right"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 320 512">
+                <path fill="#ffffff"
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+              </svg></div>
+          </div>
+          <div class="-df -c-bet -fw-w -fg1 -m-dn -h-flyout -oh -fs0">
+            <div class="card -df -fw-w -c-spar -fg1 -phm -h-50p_-m -oh"><a
+                href="#" class="-df -i-ctr -oh -fw"
+                data-id="home_HELP CENTER" data-name="HELP CENTER"
+                data-creative="https://ke.jumia.is/cms/2021/W26/CP/new-hp-sliders/Webp.net-resizeimage-(1).png"
+                data-position="topblock_top_1" data-track-onclick="eecPromo" data-track-onview="eecPromo"><img
+                  data-lazy="true"
+                  data-src="https://ke.jumia.is/cms/2021/W26/CP/new-hp-sliders/Webp.net-resizeimage-(1).png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="_ni -fsh0 -mrs" width="34" height="34" alt="HELP CENTER">
+                <div class="-flupp -gy9 -oh">
+                  <div class="-m -fs14 -elli">HELP CENTER</div>
+                  <div class="-fs12 -elli">Guide To Customer Care</div>
+                </div>
+              </a><a href="#" class="-df -i-ctr -oh -fw"
+                data-id="home_EASY RETURN" data-name="EASY RETURN"
+                data-creative="https://ke.jumia.is/cms/2021/W26/CP/new-hp-sliders/icone-2-return.png"
+                data-position="topblock_top_2" data-track-onclick="eecPromo" data-track-onview="eecPromo"><img
+                  data-lazy="true" data-src="https://ke.jumia.is/cms/2021/W26/CP/new-hp-sliders/icone-2-return.png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="_ni -fsh0 -mrs" width="34" height="34" alt="EASY RETURN">
+                <div class="-flupp -gy9 -oh">
+                  <div class="-m -fs14 -elli">EASY RETURN</div>
+                  <div class="-fs12 -elli">Quick Refund</div>
+                </div>
+              </a>
+            </div>
+            <div class="-fw" data-id="home_Under 5K Store" data-name="Under 5K Store"
+              data-creative="https://ke.jumia.is/cms/2021/Personalization/PrimeCustomer/BF/KE_Cross_PrimeCustomer_Generic_1221_BF-under-5K.gif"
+              data-position="topblock_bottom" data-track-onclick="eecPromo" data-track-onview="eecPromo"><a
+                class="card ar _109-92 -oh -fs0 -h-50p_-m" href="#"><img
+                  data-lazy="true"
+                  data-src="https://ke.jumia.is/cms/2021/Personalization/PrimeCustomer/BF/KE_Cross_PrimeCustomer_Generic_1221_BF-under-5K.gif"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  alt="Under 5K Store"></a></div>
+          </div>
+        </div>
+        
+        <!-- <div class="col16 -pvs">
+          <section class="card -oh _fw -rad4">
+            <div class="crs-w _main _thumb -fs0 _nav -tac _c-btn-on" data-crs-onview="">
+              <div class="crs">
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2"
+                    href="https://www.jumia.co.ke/mlp-fulfilled-by-jumia/" data-id="home_DTN_Cat_UND_FBJ"
+                    data-name="DTN_Cat_UND_FBJ"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN12.png"
+                    data-position="thumbnails_1_1" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN12.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Clearance  Sale"></div>
+                    <p class="-maxs -fs14 -elli2">Clearance Sale</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/televisions/"
+                    data-id="home_DTN_Cat_UND_Televisions" data-name="DTN_Cat_UND_Televisions"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN3.png"
+                    data-position="thumbnails_1_2" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN3.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Televisions"></div>
+                    <p class="-maxs -fs14 -elli2">Televisions</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/small-appliances/"
+                    data-id="home_DTN_Cat_UND_SmallApplian" data-name="DTN_Cat_UND_SmallApplian"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN2.png"
+                    data-position="thumbnails_1_3" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN2.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Small Appliances"></div>
+                    <p class="-maxs -fs14 -elli2">Small Appliances</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2"
+                    href="https://www.jumia.co.ke/home-improvement-appliances/" data-id="home_DTN_Cat_UND_LargeApplian"
+                    data-name="DTN_Cat_UND_LargeApplian"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN1.png"
+                    data-position="thumbnails_1_4" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN1.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Large Appliances"></div>
+                    <p class="-maxs -fs14 -elli2">Large Appliances</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2"
+                    href="https://www.jumia.co.ke/home-audio-electronics/" data-id="home_DTN_Cat_UND_HomeAudio"
+                    data-name="DTN_Cat_UND_HomeAudio"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN6.png"
+                    data-position="thumbnails_1_5" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN6.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Home Audio"></div>
+                    <p class="-maxs -fs14 -elli2">Home Audio</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/mens-fashion/"
+                    data-id="home_DTN_Cat_UND_MensFashion" data-name="DTN_Cat_UND_MensFashion"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN9.png"
+                    data-position="thumbnails_1_6" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN9.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Men's Fashion"></div>
+                    <p class="-maxs -fs14 -elli2">Men's Fashion</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/womens-fashion/"
+                    data-id="home_DTN_Cat_UND_WomenFashion" data-name="DTN_Cat_UND_WomenFashion"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN10.png"
+                    data-position="thumbnails_1_7" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN10.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Women's Fashion"></div>
+                    <p class="-maxs -fs14 -elli2">Women's Fashion</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/computing/"
+                    data-id="home_DTN_Cat_UND_Computing" data-name="DTN_Cat_UND_Computing"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN7.png"
+                    data-position="thumbnails_1_8" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN7.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Computing"></div>
+                    <p class="-maxs -fs14 -elli2">Computing</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/health-beauty/"
+                    data-id="home_DTN_Cat_UND_Beauty" data-name="DTN_Cat_UND_Beauty"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN4.png"
+                    data-position="thumbnails_1_9" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN4.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Beauty"></div>
+                    <p class="-maxs -fs14 -elli2">Beauty</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/home-office/"
+                    data-id="home_DTN_Cat_UND_HomeOffice" data-name="DTN_Cat_UND_HomeOffice"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN5.png"
+                    data-position="thumbnails_1_10" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN5.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Home &amp; Office"></div>
+                    <p class="-maxs -fs14 -elli2">Home &amp; Office</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a class="-fw -rad4 -hov-e-2" href="https://www.jumia.co.ke/groceries/"
+                    data-id="home_DTN_Cat_UND_Groceries" data-name="DTN_Cat_UND_Groceries"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN8.png"
+                    data-position="thumbnails_1_11" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN8.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Groceries"></div>
+                    <p class="-maxs -fs14 -elli2">Groceries</p>
+                  </a></div>
+                <div class="itm -pvs _v"><a target="_blank" rel="noopener" class="-fw -rad4 -hov-e-2"
+                    href="https://food.jumia.co.ke/" data-id="home_DTN_Cat_UND_JumiaFood"
+                    data-name="DTN_Cat_UND_JumiaFood"
+                    data-creative="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN11.png"
+                    data-position="thumbnails_1_12" data-track-onclick="eecPromo" data-track-onview="eecPromo">
+                    <div class="ar _1-1"><img data-lazy="true"
+                        data-src="https://ke.jumia.is/cms/2023/W49/JumiaKrisiSale/categoryThumbnail/TN11.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="-rad4" alt="Jumia Food"></div>
+                    <p class="-maxs -fs14 -elli2">Jumia Food</p>
+                  </a></div>
+              </div>
+              <button type="button" class="c-btn _prev _dis">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                  viewBox="0 0 320 512">
+                  <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg>
+              </button>
+              <button type="button" class="c-btn _next">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                  viewBox="0 0 320 512">
+                  <path fill="#ffffff"
+                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div> -->
+
+        
+
+
+
+        <% if(arrKey) { for (const nameCate of arrKey) { %>
+
+        <div class="col16 -pvs">
+          <section class="card -oh _fw -rad4">
+            <header class="row _no-g -fw-nw -j-bet -i-ctr -phm -mh-48px" style="background:#FF9900;">
+              <div class="cola -df -i-ctr -oh">
+                <h2 class="-m -fs20 -elli"><%= nameCate %></h2>
+              </div>
+              <div class="col -df -j-end -fsh0"><a
+                  href="/list?cate_id=<%= objCate[nameCate] %>"
+                  class="-df -i-ctr -upp -m -mls -pvxs">See All</a></div>
+            </header>
+            <div class="crs-w _main -phxs" data-crs-onview="">
+              <div class="crs row _no-g -fw-nw _6cl-4cm -pvxs">
+                <% for (const product of objdata[nameCate]) { %>
+                <div class="itm col">
+                  
+                  <article class="prd _box _hvr"><a class="core"
+                      href="/detail?id=<%= product._id %>" data-id="FA113FC1VKEQDNAFAMZ"
+                      data-name="Leather Strap Men's Sport Watch-Brown" data-price="7.17" data-brand="Fashion"
+                      data-category="Fashion/Watches &amp; Sunglasses/Men's Watches/Leather Strap"
+                      data-dimension23="140189" data-dimension26="" data-dimension27="" data-dimension28="1"
+                      data-dimension37="0" data-dimension43="BLF|CP_1|CP_23|CP_26|TBOOST|TOP" data-dimension44="0"
+                      data-position="1" data-list="productfloor_8" data-track-onclick="eecProduct"
+                      data-track-onview="eecProduct"><img data-lazy="true"
+                        data-src="<%= product.images[0] %>"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img"
+                        width="185" height="185" alt="Fashion Leather Strap Men's Sport Watch-Brown">
+                      <div class="name"><%= product.name %></div>
+                      <div class="prc" data-oprc="$ 1,983"><%= formatMoney(product.price) %> $</div>
+                      <!-- <div class="bdg _dsct">40%</div> -->
+                    </a>
+                  </article>
+                  
+                </div>
+                <% } %>
+                
+              </div><button type="button" class="c-btn _prev _dis"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                  width="24"
+                  viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                  <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg></button><button type="button" class="c-btn _next"><svg xmlns="http://www.w3.org/2000/svg"
+                  height="24" width="24" viewBox="0 0 320 512">
+                  <path fill="#ffffff"
+                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                </svg></button>
+            </div>
+          </section>
+        </div>
+        <% } }%>
+
+        <!-- <div class="col16 -pvs">
+          <section class="-rad4 -oh">
+            <div id="cms-sld-2" class="sldr _img _cms _ar73-24" data-wdct="20" data-track-onsliderview="eecPromo"><input
+                type="radio" id="cms-sld-2-sld-1" name="cms-sld-2-sld" class="sld" checked=""><a
+                href="https://www.jumia.co.ke/mlp-nivea-store/" class="itm" data-id="home_SX_ADS_BF_NVA_MAL"
+                data-name="SX_ADS_BF_NVA_MAL" data-creative="https://ke.jumia.is/cms/2023/W42/SIS/_SiS.jpg"
+                data-position="slider_2_1" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/W42/SIS/_SiS.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="Nivea"></a><label class="lab" for="cms-sld-2-sld-6" aria-label="slide 6"></label><label
+                class="dot" for="cms-sld-2-sld-1" aria-label="slide 1"></label><input type="radio" id="cms-sld-2-sld-2"
+                name="cms-sld-2-sld" class="sld"><a href="https://www.jumia.co.ke/mlp-pernod-ricard-store/" class="itm"
+                data-id="home_SX_ADS_BF_PRK_MAL" data-name="SX_ADS_BF_PRK_MAL"
+                data-creative="https://ke.jumia.is/cms/2023/W42/SIS/PRK_SIS.jpg" data-position="slider_2_2"
+                data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/W42/SIS/PRK_SIS.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="PRK"></a><label class="lab" for="cms-sld-2-sld-1" aria-label="slide 1"></label><label class="dot"
+                for="cms-sld-2-sld-2" aria-label="slide 2"></label><input type="radio" id="cms-sld-2-sld-3"
+                name="cms-sld-2-sld" class="sld"><a href="https://www.jumia.co.ke/mlp-defacto-store/" class="itm"
+                data-id="home_SX_ADS_DFT_JBP" data-name="SX_ADS_DFT_JBP"
+                data-creative="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Defacto_SIS.jpg"
+                data-position="slider_2_3" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Defacto_SIS.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="Defacto"></a><label class="lab" for="cms-sld-2-sld-2" aria-label="slide 2"></label><label
+                class="dot" for="cms-sld-2-sld-3" aria-label="slide 3"></label><input type="radio" id="cms-sld-2-sld-4"
+                name="cms-sld-2-sld" class="sld"><a href="https://www.jumia.co.ke/mlp-ecko-unltd-store/" class="itm"
+                data-id="home_SX_ADS_Ecko_JBP" data-name="SX_ADS_Ecko_JBP"
+                data-creative="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Ecko_SIS.jpg"
+                data-position="slider_2_4" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Ecko_SIS.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="Ecko"></a><label class="lab" for="cms-sld-2-sld-3" aria-label="slide 3"></label><label
+                class="dot" for="cms-sld-2-sld-4" aria-label="slide 4"></label><input type="radio" id="cms-sld-2-sld-5"
+                name="cms-sld-2-sld" class="sld"><a href="https://www.jumia.co.ke/mlp-maybelline-store/" class="itm"
+                data-id="home_SX_ADS_MNY_JBP" data-name="SX_ADS_MNY_JBP"
+                data-creative="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Maybelline_SiS.jpg"
+                data-position="slider_2_5" data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/SIS/Maybelline_SiS.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="Maybelline"></a><label class="lab" for="cms-sld-2-sld-4" aria-label="slide 4"></label><label
+                class="dot" for="cms-sld-2-sld-5" aria-label="slide 5"></label><input type="radio" id="cms-sld-2-sld-6"
+                name="cms-sld-2-sld" class="sld"><a href="https://www.jumia.co.ke/mlp-jforce/" class="itm"
+                data-id="home_SX_JForce" data-name="SX_JForce"
+                data-creative="https://ke.jumia.is/cms/2023/JForce/W29/_1168x384.jpg" data-position="slider_2_6"
+                data-track-onclick="eecPromo"><img data-lazy-slide="true"
+                  data-src="https://ke.jumia.is/cms/2023/JForce/W29/_1168x384.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="-fw"
+                  alt="JForce"></a><label class="lab" for="cms-sld-2-sld-5" aria-label="slide 5"></label><label
+                class="dot" for="cms-sld-2-sld-6" aria-label="slide 6"></label><label class="lab" for="cms-sld-2-sld-6"
+                aria-label="slide 6"></label><label class="lab" for="cms-sld-2-sld-1" aria-label="slide 1"></label>
+              <div class="left"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                  viewBox="0 0 320 512">
+                  <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg></div>
+              <div class="right"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 320 512">
+                  <path fill="#ffffff"
+                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                </svg></div>
+            </div>
+          </section>
+        </div> -->
+
+
+      </div>
+
+
+    </main>
+    <footer class="-pbm -fs12 -bg-gy7 -gy05">
+      <div class="-bg-gy9 -mbm">
+        <div class="row -ptl">
+          <div class="col4"><svg viewBox="0 0 172 30" class="ic" width="140" height="32">
+              <use xlink:href="images/i-shop-jumia.9f5451c7.svg#logo-inv"></use>
+            </svg></div>
+          <div class="col7 -df -d-co -j-bet">
+            <div>
+              <div class="f-t -pbs">New to Jumia?</div>Subscribe to our newsletter to get updates on our latest offers!
+            </div>
+            <form method="post" id="nl-ft-f" action="/newsletter/subscription/default/" class="-pts">
+              <div class="-df -i-start">
+                <div class="fi-w _ic"><input placeholder="Enter E-mail Address" required="" class="fi" type="email"
+                    value="" id="fi-nl-ft-email" name="email" aria-label="E-mail"><svg class="ic"
+                    xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#6c6f75"
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                  </svg>
+
+                </div>
+                <div class="-df -pvs -plxs"><button name="gender" value="male"
+                    class="-mhxs brd-btn _sqr -phl">Male</button><button name="gender" value="female"
+                    class="-mhxs brd-btn _sqr -phl">Female</button></div>
+              </div><input name="csrfToken" value="dbdbbb6ac24bbb8e11db420fe1b133b6" type="hidden">
+            </form>
+          </div>
+          <div class="col4 -mla">
+            <div class="-df">
+              <img src="images/favicon.adbd556a.svg" />
+              <div class="-plm">
+                <div class="f-t -pbs">DOWNLOAD JUMIA FREE APP</div>Get access to exclusive offers!
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row -pbl">
+        <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">NEED HELP?</span><button
+            class="-gy05 -pbxs -cp -ahf -tal" data-btn-lc="true" data-eventcategory="LiveChat" data-eventaction="open"
+            data-eventlabel="footer" data-track-onclick="true">Chat with us</button>
+          <ul class="-lsn">
+            <li><a class="_link -pbxs" href="#">Help Center </a></li>
+            <li><a class="_link -pbxs" href="#">Contact Us</a></li>
+          </ul><span class="f-t -pvm">USEFUL LINKS</span>
+          <ul class="-lsn">
+            <li><a class="_link -pbxs" href="#">Track Your Order</a></li>
+            <li><a class="_link -pbxs" href="#">Shipping and delivery</a></li>
+            <li><a class="_link -pbxs" href="#">Return Policy</a></li>
+            <li><a class="_link -pbxs" href="#">How to Order?</a></li>
+            <li><a class="_link -pbxs" href="#">Dispute Resolution
+                Policy</a></li>
+            <li><a class="_link -pbxs" href="#">Corporate and Bulk Purchase</a>
+            </li>
+            <li><a class="_link -pbxs" href="#">Advertise with Jumia</a></li>
+            <li><a class="_link -pbxs" href="#">Report
+                a Product</a></li>
+            <li><a class="_link -pbxs" href="#">Jumia Payment
+                Information Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">ABOUT JUMIA</span>
+          <ul class="-lsn">
+            <li><a class="_link -pbxs" href="#">About us</a></li>
+            <li><a class="_link -pbxs" href="#">Returns and Refunds
+                Policy</a></li>
+            <li><a class="_link -pbxs" href="#">Jumia Careers</a></li>
+            <li><a class="_link -pbxs" href="#">Jumia Express</a></li>
+            <li><a class="_link -pbxs" href="#">Terms and Conditions</a></li>
+            <li><a class="_link -pbxs" href="#">Store Credit Terms and
+                Conditions</a></li>
+            <li><a class="_link -pbxs" href="#">Privacy Notice</a></li>
+            <li><a class="_link -pbxs" href="#">Cookies Notice</a></li>
+            <li><a class="_link -pbxs" href="#">Flash Sales</a></li>
+            <li><a class="_link -pbxs" href="#">Black Friday 2023</a></li>
+          </ul>
+        </div>
+        <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">MAKE MONEY WITH JUMIA</span>
+          <ul class="-lsn">
+            <li><a class="_link -pbxs" href="#">Sell on Jumia</a></li>
+            <li><a class="_link -pbxs" href="#">Vendor Hub</a></li>
+            <li><a class="_link -pbxs" href="#">Become a Sales Consultant</a></li>
+            <li><a class="_link -pbxs" href="#">Become a
+                Logistics Service Partner</a></li>
+            <li><a class="_link -pbxs" href="#">Jumia City Partner Program</a></li>
+          </ul>
+        </div>
+        <div class="col4 row -c-start -pvs"><span class="f-t col16 -pbm">JUMIA INTERNATIONAL</span>
+          <ul class="col5 -df -d-co -lsn">
+            <li><a class="_link -pbxs" href="#">Algeria</a></li>
+            <li><a class="_link -pbxs" href="#">Ivory Coast</a></li>
+            <li><a class="_link -pbxs" href="#">Egypt</a></li>
+            <li><a class="_link -pbxs" href="#">Ghana</a></li>
+            <li><a class="_link -pbxs" href="#">Morocco</a></li>
+          </ul>
+          <ul class="col5 -df -d-co -lsn">
+            <li><a class="_link -pbxs" href="#">Nigeria</a></li>
+            <li><a class="_link -pbxs" href="#">Senegal</a></li>
+            <li><a class="_link -pbxs" href="#">Tunisia</a></li>
+            <li><a class="_link -pbxs" href="#">Uganda</a></li>
+            <li><a class="_link -pbxs" href="#">Zando</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+
+  </div>
+  <script>var dataLayer = [{ "countryCode": "KE", "language": "en", "platform": "desktop", "url": "/", "pageType": "home", "pageKey": "home", "pageTitle": "Jumia Kenya | Online Shopping for Fashion, Electronics, Groceries, Home & More", "abTests": "SearchABTest:default_price#CLP:A#Cart:S#SponProdPdp:A", "joinedPageType": "home" }]; (function (w, d, s, l, i, f) { function go() { w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }); f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl; j.addEventListener('load', function () { dataLayer.push({ event: 'pageView' }); (function () { setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl2" }), setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl3" }) }), 500) }), 500) })() }); f.parentNode.insertBefore(j, f); } w.addEventListener("load", go, false); })(window, document, 'script', 'dataLayer', 'GTM-KS6DC65');</script>
+  <script>window.__STORE__ = { "view": "Home", "activeLanguage": "en", "countryCode": "KE", "languages": { "en": { "text": "English", "default": true } }, "svgFallback": false, "tracking": { "gtm": { "key": "GTM-KS6DC65", "url": "/", "pageType": "home", "pageKey": "home" } }, "csrfToken": "dbdbbb6ac24bbb8e11db420fe1b133b6", "capiId": "_1701767576_{eventType}", "user": { "id": "" }, "sprites": { "icons": "https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg", "global": "https://www.jumia.co.ke/assets_he/images/i-global.95441341.svg", "shop": "https://www.jumia.co.ke/assets_he/images/i-jumia.svg" }, "liveChat": { "loadingText": "Live Chat is loading...", "botImg": "https://www.jumia.co.ke/assets_he/images/bot.5beef7d8.svg" }, "timeLabels": { "w": "w", "d": "d", "h": "h", "m": "m", "s": "s" }, "htmlErrors": { "valueMissing": "Required field", "typeMismatch": "Invalid Information", "patternMismatch": "Invalid Information", "rangeOverflow": "form_html-errors_range_overflow", "rangeUnderflow": "form_html-errors_range_underflow", "tooLong": "form_html-errors_too_long", "tooShort": "form_html-errors_too_short" }, "popups": { "newsletter": { "data": { "title": "Welcome to Jumia!", "closeCTA": "newsletter_popup_close-cta" }, "trackingData": { "viewPopup": { "type": "Newsletter" }, "closePopup": { "type": "Newsletter" } }, "template": "Default", "shouldOpen": true, "size": "L", "hideTitle": true } } };</script>
+  <script type="module" crossorigin="" src="https://www.jumia.co.ke/assets_he/js/common.6d2df574.js"></script>
+  <script type="module" crossorigin="" src="https://www.jumia.co.ke/assets_he/js/pages/home/index.a498cd5c.js"></script>
+  <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/common.es5.e568721a.js"></script>
+  <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/pages/home/index.es5.643bdb01.js"></script>
+</body>
+
+</html>

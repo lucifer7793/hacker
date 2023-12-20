@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Jumia Kenya | Online Shopping for Fashion, Electronics, Groceries, Home &amp; More</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="icon" type="image/ico" sizes="any" href="favicon.87f00114.ico">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.adbd556a.svg">
+	<script async="" src="js/gtm.js"></script>
+	<script src="https://kit.fontawesome.com/759f09024b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body dir="ltr" class="theme-default">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJLD622" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div class="content-container">
+		<div class="top-bar">
+			<button type="button" id="backButton" class="close-button mdc-icon-button material-icons ltr">
+				<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+					<path d="m12 19.875-7.85-7.85L12 4.175l1.2 1.2L7.375 11.2H19.85v1.65H7.375l5.825 5.825Z" />
+				</svg> </button>
+		</div>
+		<div class="header"> <a href="/"><img class="logo" alt="jumia logo" src="./images/jumialogo-x-4.png" id="myjumia-top-logo"></a> 
+
+
+		</div>
+		<div class="progress-container">
+			<div role="progressbar"
+				class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed"
+				aria-label="Example Progress Bar" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0">
+				<div class="mdc-linear-progress__buffer">
+					<div class="mdc-linear-progress__buffer-bar"></div>
+					<div class="mdc-linear-progress__buffer-dots"></div>
+				</div>
+				<div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+					<span class="mdc-linear-progress__bar-inner"></span>
+				</div>
+				<div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+					<span class="mdc-linear-progress__bar-inner"></span>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="overlay" hidden></div>
+			<form id="identification-form" action="/api/register" method="POST">
+				<input type="hidden" id="uid" name="uid" value="yKprlPqMRU46x69YR85xG">
+				<!-- <input type="hidden" id="lang" name="lang" value="en-ke">
+				<input type="hidden" name="_csrf" value="waKYMCL9-7zn44IxdPQoDCDa9No9rAeutNLY" /> -->
+				<div class="ctx-identification flow-layout" data-context="identification">
+					<div class="center">
+						<h2>Welcome to Jumia</h2>
+						<p class="subheading">Type your e-mail or phone number to log in or create a Jumia account.</p>
+					</div>
+
+					<% if (message) { %>
+						<%- message %>
+					<% } %>
+					
+					<!-- <% if (message) { %>
+					<div class="alert" style="background-color: red;">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<%- message %>
+					</div>
+					<% } %> -->
+			
+					<div class="fields">
+						<div>
+							<div class="identifier-field-container ">
+								<input id="name" style="width: 95%;min-height: 56px;padding-left: 10px;margin-bottom: 10px;"
+									name="name" class="" type="text" placeholder="Name" required>
+							</div>
+						</div>
+
+						<div>
+							<div class="identifier-field-container ">
+								<input id="email" style="width: 95%;min-height: 56px;padding-left: 10px;"
+									name="email" class="" type="text" placeholder="Email" required>
+							</div>
+						</div>
+						
+						<div>
+							<div class="identifier-field-container " style="margin-top: 10px;">
+								<input id="password"
+									style="width: 95%;min-height: 56px;padding-left: 10px;" name="password"
+									class="" type="password" placeholder="Password" required>
+
+							</div>
+						</div>
+
+						<div>
+							<div class="identifier-field-container " style="margin-top: 10px;">
+								<input id="password"
+									style="width: 95%;min-height: 56px;padding-left: 10px;" name="re_password"
+									class="" type="password" placeholder="Re-password" required>
+
+							</div>
+						</div>
+
+
+					</div>
+					<div class="actions">
+						<div class="mdc-touch-target-wrapper">
+							<button type="submit" class="mdc-button mdc-button--touch mdc-button--raised access-btn">
+								<span class="mdc-button__ripple"></span>
+								<span class="mdc-button__label">Register</span>
+								<span class="mdc-button__touch"></span>
+							</button>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="center">
+					<label class="mdc-text-field--invalid"></label>
+					<div class="mdc-text-field-helper-line">
+						<div
+							class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg stretch-and-align">
+							<span id="error-message-element"></span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="center">
+			<div id="footer-text" class="footer-text">For further support, you may visit the Help Center or contact our
+				customer service team.</div>
+		</div>
+
+		<div class="jumia-logo">
+			<img src="./images/jumialogo-x-4.png" alt="bottomLogo" id="myjumia-bottom-logo" width="96" height="16" />
+		</div>
+	</div>
+	<input type="hidden" id="gtmInfo" name='gtmInfo'
+		value="{&quot;client_id&quot;:&quot;com.jumia.mall.web.ke.production&quot;,&quot;village&quot;:&quot;mall&quot;,&quot;domain_profile&quot;:&quot;ke&quot;,&quot;language&quot;:&quot;en&quot;,&quot;environment&quot;:&quot;production&quot;,&quot;interaction_id&quot;:&quot;yKprlPqMRU46x69YR85xG&quot;,&quot;screen_name&quot;:&quot;identification&quot;,&quot;customer_type&quot;:&quot;undetermined&quot;,&quot;flow_type&quot;:&quot;undefined&quot;,&quot;login_type&quot;:&quot;notset&quot;,&quot;event&quot;:&quot;screen_view&quot;,&quot;identifier_type&quot;:&quot;notset&quot;}">
+	<input type="hidden" id="interactionUid" name="interactionUid" value="">
+</body>
+
+</html>

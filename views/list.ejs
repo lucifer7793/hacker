@@ -1,0 +1,359 @@
+<%- include('head-user.ejs') %>
+
+
+        <main class="has-b2top -pts">
+
+            <div class="aim row -pbm">
+                <div id="catalog-listing" class="hook"></div>
+                <div class="col4 -me-start -pvs">
+                    <div class="card -fh">
+                        <article>
+                            <h2 class="-m -upp -fs14 -pvs -phm">Category</h2>
+                            <% for (const cate of data.arrCate) { %>
+                            <a class="-db -pvs -phxl -hov-bg-gy05" href="/list?cate_id=<%= cate._id %>"
+                                data-eventCategory="Filters Apply" data-eventAction="category"
+                                data-eventLabel="22623-health-beauty" data-track-onclick="true">
+                                <%= cate.name %>
+                            </a>
+                            <% } %>
+                        </article>
+                        <article class="-phm -bt">
+                            <header class="-df -i-ctr -j-bet">
+                                <h2 class="-m -upp -fs14 -pvs">Product Rating</h2>
+                            </header>
+                            <div class="-pbxs -df -d-co">
+                                <a class="fk-rad -me-start"
+                                    href="#" aria-label="5 stars"
+                                    data-eventCategory="Filters Apply" data-eventAction="rating" data-eventLabel="5-5"
+                                    data-track-onclick="true">
+                                    <div class="stars _s -mrxs">5 out of 5<div class="in" style="width:100%"></div>
+                                    </div>&amp; above
+                                </a>
+                                <a class="fk-rad -me-start"
+                                    href="#" aria-label="4 stars and above"
+                                    data-eventCategory="Filters Apply" data-eventAction="rating" data-eventLabel="4-5"
+                                    data-track-onclick="true">
+                                    <div class="stars _s -mrxs">4 out of 5<div class="in" style="width:80%"></div>
+                                    </div>&amp; above
+                                </a>
+                                <a class="fk-rad -me-start" href="#"
+                                    aria-label="3 stars and above" data-eventCategory="Filters Apply"
+                                    data-eventAction="rating" data-eventLabel="3-5" data-track-onclick="true">
+                                    <div class="stars _s -mrxs">3 out of 5<div class="in" style="width:60%"></div>
+                                    </div>&amp; above
+                                </a><a class="fk-rad -me-start" href="#"
+                                    aria-label="2 stars and above" data-eventCategory="Filters Apply"
+                                    data-eventAction="rating" data-eventLabel="2-5" data-track-onclick="true">
+                                    <div class="stars _s -mrxs">2 out of 5<div class="in" style="width:40%"></div>
+                                    </div>&amp; above
+                                </a><a class="fk-rad -me-start" href="#"
+                                    aria-label="1 star and above" data-eventCategory="Filters Apply"
+                                    data-eventAction="rating" data-eventLabel="1-5" data-track-onclick="true">
+                                    <div class="stars _s -mrxs">1 out of 5<div class="in" style="width:20%"></div>
+                                    </div>&amp; above
+                                </a></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="-pvs col12">
+                    <section class="card -fh">
+                        <header>
+                            <div class="-mh-48px -df -i-ctr -phs -bb">
+                                <h1 class="-fs20 -m -elli -phs"><%= data.name_cate %></h1>
+                                <div class="-mla">
+                                    <div class="dpdw _pcent"><input id="dpdw-sort" class="tgl" type="checkbox"
+                                            role="button" aria-controls="dpdw-sort-box" aria-haspopup="true"
+                                            aria-label="Popularity" /><label class="trig -df -i-ctr -fs16"
+                                            for="dpdw-sort"><span class="pfx">Sort by:</span>Popularity<svg
+                                                viewBox="0 0 24 24" class="ic -mls -fsh0" width="18" height="18">
+                                                <use
+                                                    xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#arrow-down">
+                                                </use>
+                                            </svg></label>
+                                        <div class="box -zi5 -r" role="menu" aria-labelledby="dpdw-sort"
+                                            id="dpdw-sort-box">
+                                            <div class="inbox"><a
+                                                    class="-mh-40px -fs14 -df -i-ctr -fw -phm -hov-bg-gy05 -hov-m -m"
+                                                    href="#">Popularity</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="-phs -mh-48px -df -j-bet -i-ctr -bb">
+                                <p class="-gy5 -phs"><%= data.meta.total %> sản phẩm</p>
+                                <div class="-fs0"><a class="-pas -hov-or5"
+                                        href="/mlp-garnier-store/?viewType=list#catalog-listing"><svg
+                                            aria-label="List View" viewBox="0 0 24 24" class="ic -f-gy5" width="24"
+                                            height="24">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#list-view">
+                                            </use>
+                                        </svg></a><a class="-pas -hov-or5"
+                                        href="/mlp-garnier-store/?viewType=grid#catalog-listing"><svg
+                                            aria-label="Grid View" viewBox="0 0 24 24" class="ic -f-or5" width="24"
+                                            height="24">
+                                            <use
+                                                xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#grid-view">
+                                            </use>
+                                        </svg></a></div>
+                            </div>
+                        </header>
+                        <div class="-paxs row _no-g _4cl-3cm-shs" data-catalog="true">
+                            <% if(data) { for (const product of data.data) { %>
+                            <article class="prd _fb col c-prd"><a class="core"
+                                    href="/detail?id=<%= product._id %>"
+                                    data-id="GA297ST1QK1H2NAFAMZ" data-name="Vitamin C Booster Serum 30ml Twin Pack"
+                                    data-price="15.81" data-brand="Garnier"
+                                    data-category="Health &amp; Beauty/Beauty &amp; Personal Care/Personal Care/Skin Care/Face/Treatments &amp; Masks/Serums"
+                                    data-dimension23="5662" data-dimension26="314" data-dimension27="4.6"
+                                    data-dimension28="1" data-dimension37="0"
+                                    data-dimension43="BDEAL|BLF|BLF_02|Boost|COL_260|COL_268|COL_270|COL_275|COL_277|COL_317|CP_24|CP_MT31|CP_UN17|CP_UN247|CP_UN250|CP_UN255|CP_UN34|DOW_100|JA23_01|JMALL|TBOOST|TOP|XMAS"
+                                    data-dimension44="0" data-list data-position="1" data-track-onclick="eecProduct"
+                                    data-track-onview="eecProduct">
+                                    <div class="img-c"><img data-lazy="true"
+                                            data-src="<%= product.images[0] %>"
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            class="img" width="208" height="208" alt /></div>
+                                    <div class="info">
+                                        <div class="bdg _mall _xs">Official Store</div>
+                                        <h3 class="name"><%= product.name %></h3>
+                                        <div class="prc"><%= formatMoney(product.price) %> $</div>
+                                        
+                                        
+                                        <div class="rev">
+                                            <div class="stars _s">5 out of 5<div class="in"
+                                                    style="width:91.99999999999999%"></div>
+                                            </div>(<%= product.quantity %>)
+                                        </div><svg aria-label="Express Shipping" viewBox="0 0 114 12" class="ic xprss"
+                                            width="94" height="10">
+                                            <use
+                                                xlink:href="#">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <footer class="ft">
+                                    <form 
+                                        class="-df -i-ctr -pr -j-bet" data-add-cart data-sku="GA297ST1QK1H2NAFAMZ"
+                                        data-svar="GA297ST1QK1H2NAFAMZ-161614386" data-xhr="true"
+                                        data-id="GA297ST1QK1H2NAFAMZ" data-name="Vitamin C Booster Serum 30ml Twin Pack"
+                                        data-price="15.81" data-brand="Garnier"
+                                        data-category="Health &amp; Beauty/Beauty &amp; Personal Care/Personal Care/Skin Care/Face/Treatments &amp; Masks/Serums"
+                                        data-dimension23="5662" data-dimension26="314" data-dimension27="4.6"
+                                        data-dimension28="1" data-dimension37="0"
+                                        data-dimension43="BDEAL|BLF|BLF_02|Boost|COL_260|COL_268|COL_270|COL_275|COL_277|COL_317|CP_24|CP_MT31|CP_UN17|CP_UN247|CP_UN250|CP_UN255|CP_UN34|DOW_100|JA23_01|JMALL|TBOOST|TOP|XMAS"
+                                        data-dimension44="0" data-simpleSku="GA297ST1QK1H2NAFAMZ-161614386" data-variant
+                                        data-track-onsubmit="addToCart"><button type="button"
+                                            class="add btn _prim -pea _md" data-submit name="action" value="in">Like</button><input name="capiId"
+                                            value="d72d2ec788a20bcb8266c7855516d002_1701766727_{eventType}"
+                                            type="hidden" /><input name="csrfToken"
+                                            value="87534d8fbeaf05010f1dfba8b92cf869" type="hidden" /></form>
+                                </footer>
+                            </article>
+                            <% } }%>
+                            
+                            
+                            
+                        <!-- end body --> 
+                        </div>
+                        <div class="pg-w -ptm -pbxl">
+                            <% for (const button of pagination) { %>
+                            <a aria-label="Page <%= button %>" class="pg <%= curPage == button ? '_act' : '' %>" href="/list?cate_id=<%= cate_id %>&page=<%= button %>"><%= button %> </a>
+                            <% } %>
+                        </div>
+                    </section>
+                </div>
+                <div class="reco _hid col16 -pvs" data-reco-onView="lastViewed" data-list="lastViewed"
+                    pageType="catalog">
+                    <div class="reco-w card">
+                        <header class="-df -fw -pas -i-ctr -mh-48px">
+                            <h2 class="-phs -fs20 -m -f1 -elli">Recently Viewed<span class="-r"
+                                    data-plc-subtitle="true"></span></h2><a
+                                class="-df -i-ctr -fsh0 -upp -m -lh-1 -pvxs -mla -or5" data-plc-href="true">See All<svg
+                                    viewBox="0 0 24 24" class="ic -f-or5" width="24" height="24">
+                                    <use
+                                        xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg#arrow-right">
+                                    </use>
+                                </svg></a>
+                        </header>
+                        <div data-plc="true"></div>
+                    </div>
+                </div>
+                <section class="col16 -pvs">
+                    <div class="card -phm -fs12">
+                        <div class="markup -pvs">
+                            <h2>Garnier Store Available on Jumia Kenya</h2>
+
+                            <h2>Shop Garnier Products Online</h2>
+
+                            <p>Are you looking for original Garnier products? Head to&nbsp;Jumia Kenya website or
+                                download the Jumia app on your phone and enjoy a wonderful shopping experience. You can
+                                find <a href="#">Garnier
+                                    Cleanser</a>&nbsp;and&nbsp;<strong>Facial Wash </strong>that suit all skin types
+                                such as <strong>Garnier Pure Active</strong>, Garnier Skin Active Fast Fairness Wash
+                                With <strong>Vitamin C </strong>And Lemon or many other choices. Get a clean and pure
+                                skin&nbsp;by purchasing one of the amazing&nbsp;<a
+                                    href="#">Garnier
+                                    Masks</a>&nbsp;like the Garnier Sheet Mask with Vitamin C, Garnier Sheet Mask with
+                                pomegranate extract and hyaluronic acid, Garnier Mask with charcoal, in addition to many
+                                other effective types.</p>
+
+                            <h2>Buy Original Garnier Products at the Cheapest Prices</h2>
+
+                            <p>Jumia Kenya has great offers on all Garnier Products, whether <a
+                                    href="#">Garnier Micellar
+                                    Water</a>, Garnier Mask, <strong>Garnier BB Cream </strong>or <strong>Garnier Hair
+                                    Color</strong>. If you want the best Garnier cleanser prices in the market, check
+                                out our Garnier store and enjoy unbeatable discounts when completing the purchase,
+                                knowing that we deliver all orders to your doorstep or any convenient place for you.
+                                Easily remove waterproof make-up with Garnier Make-up Remover that picks up dirt, oil
+                                and makeup like a magnet without damaging the skin.</p>
+
+                            <h2>Check Out Garnier Products On Jumia</h2>
+
+                            <p>Buy <strong>Garnier Hair Dye</strong> that is available in all colors and shades on our
+                                website and get rid of gray hair easily and at a reasonable price. Get <strong>Garnier
+                                    Color Naturals</strong>&nbsp;which is an advanced formula with olive oil extract
+                                that nourishes the hair, giving you a wonderful, shiny and uniform color.</p>
+                        </div>
+                        <div class="row _no-g markup -pvs -mts -bt"><a class="col4 -pvs"
+                                href="#" tabindex="-1">Garnier Anti Wrinkle Eye
+                                Cream</a><a class="col4 -pvs" href="#" tabindex="-1">Garnier
+                                Tissue Masks</a><a class="col4 -pvs" href="#"
+                                tabindex="-1">Garnier Skin Active</a><a class="col4 -pvs"
+                                href="#" tabindex="-1">Garnier Pure Active Mask</a><a
+                                class="col4 -pvs" href="#" tabindex="-1">Garnier Micellar
+                                Water</a><a class="col4 -pvs" href="#" tabindex="-1">Garnier Face
+                                Wash</a><a class="col4 -pvs" href="#" tabindex="-1">Garnier
+                                Cream</a><a class="col4 -pvs" href="#" tabindex="-1">Garnier
+                                Cleanser</a><a class="col4 -pvs" href="#"
+                                tabindex="-1">Garnier Charcoal Mask</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <script
+                type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.jumia.co.ke/","name":"Home"}}]}}</script>
+        </main>
+
+        <footer class="-pbm -fs12 -bg-gy7 -gy05">
+            <div class="-bg-gy9 -mbm">
+                <div class="row -ptl">
+                    <div class="col4"><svg viewBox="0 0 172 30" class="ic" width="140" height="32">
+                            <use xlink:href="images/i-shop-jumia.9f5451c7.svg#logo-inv"></use>
+                        </svg></div>
+                    <div class="col7 -df -d-co -j-bet">
+                        <div>
+                            <div class="f-t -pbs">New to Jumia?</div>Subscribe to our newsletter to get updates on our
+                            latest offers!
+                        </div>
+                        <form method="post" id="nl-ft-f" action="/newsletter/subscription/default/" class="-pts">
+                            <div class="-df -i-start">
+                                <div class="fi-w _ic"><input placeholder="Enter E-mail Address" required="" class="fi"
+                                        type="email" value="" id="fi-nl-ft-email" name="email" aria-label="E-mail"><svg
+                                        class="ic" xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                        <path fill="#6c6f75"
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>
+
+                                </div>
+                                <div class="-df -pvs -plxs"><button name="gender" value="male"
+                                        class="-mhxs brd-btn _sqr -phl">Male</button><button name="gender"
+                                        value="female" class="-mhxs brd-btn _sqr -phl">Female</button></div>
+                            </div><input name="csrfToken" value="dbdbbb6ac24bbb8e11db420fe1b133b6" type="hidden">
+                        </form>
+                    </div>
+                    <div class="col4 -mla">
+                        <div class="-df">
+                            <img src="images/favicon.adbd556a.svg" />
+                            <div class="-plm">
+                                <div class="f-t -pbs">DOWNLOAD JUMIA FREE APP</div>Get access to exclusive offers!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row -pbl">
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">NEED HELP?</span><button
+                        class="-gy05 -pbxs -cp -ahf -tal" data-btn-lc="true" data-eventcategory="LiveChat"
+                        data-eventaction="open" data-eventlabel="footer" data-track-onclick="true">Chat with us</button>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Help Center </a></li>
+                        <li><a class="_link -pbxs" href="#">Contact Us</a></li>
+                    </ul><span class="f-t -pvm">USEFUL LINKS</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Track Your Order</a></li>
+                        <li><a class="_link -pbxs" href="#">Shipping and delivery</a></li>
+                        <li><a class="_link -pbxs" href="#">Return Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">How to Order?</a></li>
+                        <li><a class="_link -pbxs" href="#">Dispute Resolution
+                                Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">Corporate and Bulk Purchase</a>
+                        </li>
+                        <li><a class="_link -pbxs" href="#">Advertise with Jumia</a></li>
+                        <li><a class="_link -pbxs" href="#">Report
+                                a Product</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Payment
+                                Information Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">ABOUT JUMIA</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">About us</a></li>
+                        <li><a class="_link -pbxs" href="#">Returns and Refunds
+                                Policy</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Careers</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia Express</a></li>
+                        <li><a class="_link -pbxs" href="#">Terms and Conditions</a></li>
+                        <li><a class="_link -pbxs" href="#">Store Credit Terms and
+                                Conditions</a></li>
+                        <li><a class="_link -pbxs" href="#">Privacy Notice</a></li>
+                        <li><a class="_link -pbxs" href="#">Cookies Notice</a></li>
+                        <li><a class="_link -pbxs" href="#">Flash Sales</a></li>
+                        <li><a class="_link -pbxs" href="#">Black Friday 2023</a></li>
+                    </ul>
+                </div>
+                <div class="col4 -df -d-co -pvs"><span class="f-t -pbm">MAKE MONEY WITH JUMIA</span>
+                    <ul class="-lsn">
+                        <li><a class="_link -pbxs" href="#">Sell on Jumia</a></li>
+                        <li><a class="_link -pbxs" href="#">Vendor Hub</a></li>
+                        <li><a class="_link -pbxs" href="#">Become a Sales Consultant</a></li>
+                        <li><a class="_link -pbxs" href="#">Become a
+                                Logistics Service Partner</a></li>
+                        <li><a class="_link -pbxs" href="#">Jumia City Partner Program</a></li>
+                    </ul>
+                </div>
+                <div class="col4 row -c-start -pvs"><span class="f-t col16 -pbm">JUMIA INTERNATIONAL</span>
+                    <ul class="col5 -df -d-co -lsn">
+                        <li><a class="_link -pbxs" href="#">Algeria</a></li>
+                        <li><a class="_link -pbxs" href="#">Ivory Coast</a></li>
+                        <li><a class="_link -pbxs" href="#">Egypt</a></li>
+                        <li><a class="_link -pbxs" href="#">Ghana</a></li>
+                        <li><a class="_link -pbxs" href="#">Morocco</a></li>
+                    </ul>
+                    <ul class="col5 -df -d-co -lsn">
+                        <li><a class="_link -pbxs" href="#">Nigeria</a></li>
+                        <li><a class="_link -pbxs" href="#">Senegal</a></li>
+                        <li><a class="_link -pbxs" href="#">Tunisia</a></li>
+                        <li><a class="_link -pbxs" href="#">Uganda</a></li>
+                        <li><a class="_link -pbxs" href="#">Zando</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+    <script>var dataLayer = [{ "countryCode": "KE", "language": "en", "platform": "desktop", "url": "/", "pageType": "home", "pageKey": "home", "pageTitle": "Jumia Kenya | Online Shopping for Fashion, Electronics, Groceries, Home & More", "abTests": "SearchABTest:default_price#CLP:A#Cart:S#SponProdPdp:A", "joinedPageType": "home" }]; (function (w, d, s, l, i, f) { function go() { w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }); f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl; j.addEventListener('load', function () { dataLayer.push({ event: 'pageView' }); (function () { setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl2" }), setTimeout((function () { window.dataLayer.push({ event: "pageViewLvl3" }) }), 500) }), 500) })() }); f.parentNode.insertBefore(j, f); } w.addEventListener("load", go, false); })(window, document, 'script', 'dataLayer', 'GTM-KS6DC65');</script>
+    <script>window.__STORE__ = { "view": "Home", "activeLanguage": "en", "countryCode": "KE", "languages": { "en": { "text": "English", "default": true } }, "svgFallback": false, "tracking": { "gtm": { "key": "GTM-KS6DC65", "url": "/", "pageType": "home", "pageKey": "home" } }, "csrfToken": "dbdbbb6ac24bbb8e11db420fe1b133b6", "capiId": "_1701767576_{eventType}", "user": { "id": "" }, "sprites": { "icons": "https://www.jumia.co.ke/assets_he/images/i-icons.a66628fd.svg", "global": "https://www.jumia.co.ke/assets_he/images/i-global.95441341.svg", "shop": "https://www.jumia.co.ke/assets_he/images/i-jumia.svg" }, "liveChat": { "loadingText": "Live Chat is loading...", "botImg": "https://www.jumia.co.ke/assets_he/images/bot.5beef7d8.svg" }, "timeLabels": { "w": "w", "d": "d", "h": "h", "m": "m", "s": "s" }, "htmlErrors": { "valueMissing": "Required field", "typeMismatch": "Invalid Information", "patternMismatch": "Invalid Information", "rangeOverflow": "form_html-errors_range_overflow", "rangeUnderflow": "form_html-errors_range_underflow", "tooLong": "form_html-errors_too_long", "tooShort": "form_html-errors_too_short" }, "popups": { "newsletter": { "data": { "title": "Welcome to Jumia!", "closeCTA": "newsletter_popup_close-cta" }, "trackingData": { "viewPopup": { "type": "Newsletter" }, "closePopup": { "type": "Newsletter" } }, "template": "Default", "shouldOpen": true, "size": "L", "hideTitle": true } } };</script>
+    <script type="module" crossorigin="" src="https://www.jumia.co.ke/assets_he/js/common.6d2df574.js"></script>
+    <script type="module" crossorigin=""
+        src="https://www.jumia.co.ke/assets_he/js/pages/home/index.a498cd5c.js"></script>
+    <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/common.es5.e568721a.js"></script>
+    <script nomodule="" src="https://www.jumia.co.ke/assets_he/js/pages/home/index.es5.643bdb01.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<%- include('../head.ejs') %>
+    <!-- / Navbar -->
+
+    <!-- Content wrapper -->
+    <div class="content-wrapper">
+        <!-- Content -->
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- <h4 class="py-3 mb-4"><span class="text-muted fw-light">Category/</span>Create</h4> -->
+
+            <!-- Basic Layout & Basic with Icons -->
+            <div class="row">
+                <!-- Basic Layout -->
+
+                    <div class="col-xxl">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">Chỉnh sửa sản phẩm-</h5>
+                                <!-- <small class="text-muted float-end">Default label</small> -->
+                            </div>
+
+                            <% if (message) { %>
+                                <%- message %>
+                            <% } %>
+                            <div class="card-body">
+                                <form method="post" action="/api/product/edit/<%= data._id %>" enctype="multipart/form-data"> 
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Ảnh</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" class="form-control"
+                                             name="files" accept="image/*" multiple />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <% for (const item of data.images) { %>
+                                            <img class="form-control" src="/<%= item %>" style="width: 15%;margin-right: 5px;">
+                                        <% } %>
+                                        
+                                    </div>
+                                    
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Tên</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                             name="name" required value="<%= data.name %>"  placeholder="Tên" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Danh mục</label>
+                                        <div class="col-sm-10">
+                                            
+                                            <select class="form-select" id="exampleFormControlSelect1" name="cate_id" >
+                                                <% for (const item of category) { %>
+                                                    <option value="<%= item._id %>" <%= item._id === data.cate_id ? 'selected' : '' %> ><%= item.name %></option>
+                                                <% } %>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Số lượng</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="basic-default-name"
+                                             name="quantity" required   placeholder="Số lượng" value="<%= data.quantity %>" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Giá</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="basic-default-name"
+                                             name="price" required   placeholder="Giá" value="<%= data.price %>" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="basic-default-name">Mô tả</label>
+                                        <div class="col-sm-10">
+                                             <textarea id="articleContent" class="form-control" name="description" ><%= data.description %></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-primary">Update</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+        <!-- / Content -->
+
+        <div class="content-backdrop fade"></div>
+    </div>
+    <!-- Content wrapper -->
+
+    <%- include('../footer.ejs') %>

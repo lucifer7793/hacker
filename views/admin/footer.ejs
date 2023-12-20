@@ -1,0 +1,58 @@
+ <!-- / Layout page -->
+</div>
+
+<!-- Overlay -->
+<div class="layout-overlay layout-menu-toggle"></div>
+</div>
+<!-- / Layout wrapper -->
+
+
+<script>
+    function editCategory(categoryId) {
+      // Implement your edit logic here
+      console.log('Edit category with ID:', categoryId);
+    }
+  
+    function deleteFunction(url) {
+        console.log("delete functionn", url)
+      // Make an AJAX request to delete the category
+      fetch(url, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then(data => {
+          alert("Xóa thành công")
+          setTimeout(() => {
+            window.location.reload()
+          }, 500)
+        })
+        .catch(error => alert("Xóa thất bại"));
+    }
+  </script>
+
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="/admin/assets/vendor/libs/jquery/jquery.js"></script>
+<script src="/admin/assets/vendor/libs/popper/popper.js"></script>
+<script src="/admin/assets/vendor/js/bootstrap.js"></script>
+<script src="/admin/assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="/admin/assets/vendor/js/menu.js"></script>
+
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+<script src="/admin/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+<!-- Main JS -->
+<script src="/admin/assets/js/main.js"></script>
+
+<!-- Page JS -->
+<script src="/admin/assets/js/dashboards-analytics.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
